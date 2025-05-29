@@ -5,10 +5,7 @@ import { Boxes } from "./bgbox";
 export const FrontendBentoGridItem = ({
   className,
   title,
-  header,
-  description,
   buttons,
-  id,
 }: {
   className?: string;
   title?: string | React.ReactNode;

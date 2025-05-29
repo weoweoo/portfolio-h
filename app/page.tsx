@@ -1,7 +1,6 @@
 import HeroSvg from "./assets/heroSVG";
 import { Slide } from "../components/slide";
 import { FloatingNav } from "@/components/floating-navbar";
-import BrutalistButton from "@/components/brutalButton";
 import Grid from "./Grid";
 import { AnimatedProjects } from "@/components/Animatedprojects";
 import { projects } from "@/components/lib/data";
@@ -27,7 +26,7 @@ export default function Home() {
             Aspiring Frontend Developer
           </h1>
           <p className="text-gray-400 text-[18px] md:text-[28px]">
-            Hi, I'm Habsa — a Software Engineering graduate passionate about building intuitive, user-friendly interfaces.
+            Hi, I&apos;m Habsa — a Software Engineering graduate passionate about building intuitive, user-friendly interfaces.
             I enjoy solving problems, learning new technologies, and bringing creative ideas to life on the web.
           </p>
 
@@ -64,7 +63,7 @@ export default function Home() {
       <Grid />
 
       <AnimatedProjects project={projects} />
-      
+
       <Footer/>
     </main>
   );

@@ -27,7 +27,6 @@ export const BentoGridItem = ({
   description,
   header,
   buttons,
-  id,
   logo, // New prop for logo
 }: {
   className?: string;
