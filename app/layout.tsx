@@ -4,7 +4,7 @@ import { Press_Start_2P, Handjet, Chakra_Petch } from 'next/font/google';
 
 
 export const metadata: Metadata = {
-  title: "Habsa",
+  title: "Habsa's Portfolio",
   description: "Habsa's Portfolio",
 };
 

@@ -5,15 +5,17 @@ import Grid from "./Grid";
 import { AnimatedProjects } from "@/components/Animatedprojects";
 import { projects } from "@/components/lib/data";
 import Footer from "@/components/footer";
+import ContactForm from "./contact";
 
 export default function Home() {
   return (
     <main className=" h-screen relative px-10 gap-2">
       <FloatingNav
         navItems={[
-          { name: 'About', link: '#' },
+          { name: 'About me', link: '#' },
           { name: 'Skills', link: '#skills' },
           { name: 'Projects', link: '#projects' },
+          { name: 'Contact', link: '#contact' },
         ]}
       />
       <section id="home" className="w-full h-full pt-20 md:pt-0">
@@ -63,6 +65,8 @@ export default function Home() {
       <Grid />
 
       <AnimatedProjects project={projects} />
+
+      <ContactForm />
 
       <Footer/>
     </main>
