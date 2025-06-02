@@ -15,7 +15,7 @@ export default function Home() {
           { name: 'About me', link: '#' },
           { name: 'Skills', link: '#skills' },
           { name: 'Projects', link: '#projects' },
-          // { name: 'Contact', link: '#contact' },
+          { name: 'Contact', link: '#contact' },
         ]}
       />
       <section id="home" className="w-full h-full pt-20 md:pt-0">
