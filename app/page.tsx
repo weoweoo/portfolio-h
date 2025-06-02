@@ -66,7 +66,7 @@ export default function Home() {
 
       <AnimatedProjects project={projects} />
 
-      {/* <ContactForm /> */}
+      <ContactForm />
 
       <Footer/>
     </main>
