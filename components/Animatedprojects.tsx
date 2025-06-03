@@ -54,7 +54,7 @@ export const AnimatedProjects = ({
 
   if (!isClient) {
     return (
-      <section id="projects" className="py-3">
+      <section id="projects" className="px-20">
       <div className="min-h-screen w-full flex items-center justify-center antialiased px-4 sm:px-6 lg:px-8">
         <div className="relative grid grid-cols-1 gap-8 md:gap-16 lg:gap-20 md:grid-cols-3 w-full max-w-7xl">
           <div className="flex items-center justify-center md:col-span-1">
@@ -95,7 +95,7 @@ export const AnimatedProjects = ({
       </p>
                     )}
             </div>
-            <div className="flex gap-4 mt-8 md:mt-12">
+            <div className="flex gap-4 mt-8 md:mt-12 py-10">
               <button
                 onClick={handlePrev}
                 className="group/button flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors"
@@ -118,7 +118,7 @@ export const AnimatedProjects = ({
 
   return (
     
-  <section id="projects" className="py-3">
+  <section id="projects" className="py-50 md:py-0">
     <div className="min-h-screen w-full flex items-center justify-center antialiased px-4 sm:px-6 lg:px-8">
       <div className="relative grid grid-cols-1 gap-8 md:gap-16 lg:gap-50 md:grid-cols-3 w-full max-w-7xl">
         <div className="flex items-center justify-center md:col-span-1">

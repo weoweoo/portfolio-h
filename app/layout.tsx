@@ -6,6 +6,7 @@ import { Press_Start_2P, Handjet, Chakra_Petch } from 'next/font/google';
 export const metadata: Metadata = {
   title: "Habsa's Portfolio",
   description: "Habsa's Portfolio",
+  viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
 };
 
 
@@ -33,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${pressStart.variable} ${handjet.variable} ${chakraPetch.variable}`}>
-      <body>{children}</body>
+      <body className="min-h-screen overflow-y-auto bg-black text-white" style={{minHeight: '100vh'}}>
+        {children}
+      </body>
     </html>
   );
 }

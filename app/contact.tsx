@@ -113,7 +113,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id='contact' className="w-full gap-3 p-4 py-10">
+    <section id='contact' className="w-full gap-3 p-4 py-30 ">
       <div className="bg-zinc-900 rounded-xl border border-white/[0.2] p-6 w-full flex flex-col lg:flex-row gap-6">
         {/* Left side - Form */}
         <div className="flex-1 p-4 lg:p-8">
@@ -231,7 +231,7 @@ const ContactForm = () => {
             {/* Status Messages */}
             {submitStatus === 'success' && (
               <div className="bg-green-900/30 border border-green-700 text-green-300 px-3 py-2 rounded-lg text-left">
-                <p className=" text-xl">Thank you! Your message has been sent successfully. I&apos;ll get back to you soon.</p>
+                <p className=" text-xl">Thank you! Your message has been sent successfully. I will get back to you soon.</p>
               </div>
             )}
             

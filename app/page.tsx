@@ -9,7 +9,7 @@ import ContactForm from "./contact";
 
 export default function Home() {
   return (
-    <main className=" h-screen relative px-10 gap-2">
+    <main className="min-h-screen relative pt-10 md:pt-40 gap-2 md:px-25">
       <FloatingNav
         navItems={[
           { name: 'About me', link: '#' },
@@ -18,13 +18,13 @@ export default function Home() {
           { name: 'Contact', link: '#contact' },
         ]}
       />
-      <section id="home" className="w-full h-full pt-20 md:pt-0">
+      <section id="home" className="w-full h-full pt-40 md:pt-0 pb-50 px-10">
       <div className="flex flex-col lg:flex-row items-center justify-between w-full h-full px-10 md:px-20">
 
         {/* Left side: Text */}
         <Slide delay={0.14}>
         <div className="w-full md:w-4/5 flex flex-col gap-8 z-[10] max-w-[750px]">
-          <h1 className="text-white text-[40px] md:text-[50px] font-bold">
+          <h1 className="text-white text-[35px] md:text-[50px] font-bold">
             Aspiring Frontend Developer
           </h1>
           <p className="text-gray-400 text-[18px] md:text-[28px]">
@@ -56,17 +56,25 @@ export default function Home() {
         </Slide>
 
         {/* Right side: SVG */}
-        <Slide delay={0.14}>
+        <Slide delay={0.14} className="hidden md:block">
           <HeroSvg />
         </Slide>
       </div>
       </section>
 
+      <Slide delay={0.14}>
       <Grid />
-
+      </Slide>
+      
+      <Slide delay={0.14}>
       <AnimatedProjects project={projects} />
+      </Slide>
 
+
+
+      <Slide delay={0.14}>
       <ContactForm />
+      </Slide>
 
       <Footer/>
     </main>

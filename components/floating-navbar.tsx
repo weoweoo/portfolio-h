@@ -46,13 +46,13 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative text-neutral-300 items-center flex space-x-1  hover:text-neutral-100"
+              "relative text-neutral-300 text-s items-center flex space-x-1  hover:text-neutral-100"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-xl !cursor-pointer">{navItem.name}</span>
+            <span className=" text-s md:text-xl !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

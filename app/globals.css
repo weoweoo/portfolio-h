@@ -18,6 +18,17 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}
 
 body {
   background-color: #18181b;

@@ -1,13 +1,12 @@
 import { BentoGrid, BentoGridItem } from "@/components/BentoGrid";
 import { stack } from "@/components/lib/data";
-import { FrontendBentoGridItem } from "@/components/frontendbg";
 
 const Grid = () => {
   return (
-    <section id="skills" className="w-full min-h-screen flex flex-col md:flex-row gap-6 sm:gap-3 py-4 pt-5 md:pt-40 lg:pt-5">
+    <section id="skills" className="w-full min-h-screen flex flex-col md:flex-row gap-6 sm:gap-3 py-4 pt-5 md:pt-0 lg:pt-5">
       {/* Left bar*/}
       <div className="w-full md:w-1/3 h-auto md:h-[80vh]">
-        <FrontendBentoGridItem
+        <BentoGridItem
           id={1}
           title="Frontend"
           className="h-full min-h-[300px] md:min-h-[600px] bg-gradient-to-br from-zinc-800 to-stone-900"
